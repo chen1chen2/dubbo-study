@@ -18,7 +18,7 @@
     <dubbo:application name="dubbo-study-consumer" />
 
     <!-- 使用zookeeper注册中心寻找和暴露服务地址 -->
-    <dubbo:registry address="zookeeper://127.0.0.1:2181" />
+    <dubbo:registry address="zookeeper://192.168.249.11:2181" />
 
     <!-- 生成远程服务代理，可以像使用本地bean一样使用demoService -->
     <dubbo:reference id="demoService" interface="dubbo.inf.DemoService" check="false" />
